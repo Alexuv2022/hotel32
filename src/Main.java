@@ -76,6 +76,7 @@ public class Main {
                 for (Room room: rooms) {
                     if (room.getNum() == num) {
                         room.setReserved(true);
+                        System.out.println("Комната " + num + "забронирована");
                     }
                 }
             } else if (command.contains("/checkout")) {
@@ -83,6 +84,7 @@ public class Main {
                 for (Room room: rooms) {
                     if (room.getNum() == num) {
                         room.setReserved(false);
+                        System.out.println("Комната " + num + "свободна");
                     }
                 }
             } else if (command.equals("/help")) {
